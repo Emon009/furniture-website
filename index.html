@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sticky.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Furniture website</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo"><a href="#">FIU</a></div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Subscribe</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- header section start -->
+
+        <section class="header_sec">
+            <div class="header_row">
+                <div class="head_content">
+                    <h1>Best Design of Furniture</h1>
+                    <p>It is a long established fact that a reader will bedistracted by the readable content of </p>
+                    <button>Contact Us</button>
+                </div>
+                <div class="head_img">
+                    <img src="photo/Furniture1.png" alt="">
+                </div>
+            </div>
+        </section>
+      <!-- header section end -->
+
+      <!-- About section start -->
+
+      <section class="about_section" id="about">
+        <h3>About Us</h3>
+        <div class="row">
+            <div class="about_img">
+                <img src="photo/Furniture2.png" alt="">
+            </div>
+            <div class="content">
+                <h2>About Us</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised </p>
+                <button class="about_btn">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section end -->
+
+    <!-- work section start -->
+
+    <section class="work_sec">
+      <h2>Our Work Furniture</h2>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteratio</p>
+      <div class="work_row">
+        <div class="work">
+          <h6>Chair 01</h6>
+          <img src="photo/Furniture3.png" alt="">
+          <h5>Price $100</h5>
+          <button class="wk_btn">Buy Now</button>
+        </div>
+        <div class="work">
+          <h6>Chair 02</h6>
+          <img src="photo/Furniture4.png" alt="">
+          <h5>Price $100</h5>
+          <button class="wk_btn">Buy Now</button>
+        </div>
+        <div class="work">
+          <h6>Table</h6>
+          <img src="photo/Furniture5.png" alt="">
+          <h5>Price $100</h5>
+          <button class="wk_btn">Buy Now</button>
+        </div>
+      </div>
+      <button class="work_btn">See More</button>
+    </section>
+    <!-- work section end -->
+
+    <!-- subscribe section start -->
+
+    <section class="subscribe_sec">
+      <div class="subscribe_row">
+        <div class="subscribe_image">
+          <img src="photo/Furniture6.png" alt="">
+        </div>
+        <div class="subscribe">
+          <input type="email" value="" class="sbuscribe_in" placeholder="Enter Your Email">
+          <input type="submit" value="Subscribe Now" class="subscribe_sub">
+        </div>
+      </div>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- footer section start -->
+
+    <footer class="footer_sec">
+      <div class="footer_row">
+        <div class="footer_cont">
+          <h2>Useful Link</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer_cont">
+          <h2>Contact Info</h2>
+          <ul>
+            <li>🏠 Loram Ipusm hosting web</li>
+            <li>📞 +7586656566</li>
+            <li>🌏 demo@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer_cont">
+          <h2>Our Shop</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia delectus debitis deserunt nam. Enim similique beatae quibusdam quas dicta.</p>
+        </div>
+      </div>
+
+    </footer>
+    <!-- footer section end -->
+
+
+
+
+
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          menu.classList.add("active");
+          menuBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+          body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = ()=>{
+          menu.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+</body>
+</html>

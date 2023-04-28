@@ -1,0 +1,283 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    --color1: #fff;
+    --color2: #181818;
+
+  }
+
+  /* heading section start */
+  .header_sec{
+    padding: 9% 7%;
+    background-color: bisque;
+  }
+  .header_row{
+    margin: 10% 0%;
+  }
+  .header_sec .header_row{
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  }
+  /* .header_row.head_content{
+    padding: 2rem 0;
+  } */
+  .head_content{
+    margin-top: 30px;
+  }
+  .header_row .head_img{
+    /* flex: 1 1 45rem; */
+
+  }
+  .header_row .head_img img{
+    width: 70%;
+  }
+  .head_content h1{
+    color: #7C2C0C;
+    font-size: 5rem;
+    padding: 0 7%;
+  }
+  .head_content p{
+    color: #7C2C0C;
+    font-size: 1.8rem;
+    padding: 7%;
+  }
+  .head_content button{
+    width: 13rem;
+    height: 4rem;
+    color: #fff;
+    background-color: #7C2C0C;
+    margin: 0 7%;
+  }
+  .head_content button:hover{
+    background-color: #181818;
+    color: #fff;
+  }
+
+  /* heading section end */
+
+  /* about section start */
+
+.about_section{
+  padding:0 7%;
+  text-align: center;
+}
+.about_section h3{
+  font-size: 6rem;
+  padding: 2.5 0px;
+  color: #000;
+  text-align: center;
+  padding: 5rem 0rem;
+}
+.about_section .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about_section .row .about_img{
+  flex:1 1 45rem;
+}
+.about_section .row .content{
+  flex:1 1 45rem;
+  padding:2rem;
+
+}
+.about_section .row .content h2{
+  font-size: 3rem;
+  color:#000;
+}
+.about_section p{
+  font-size: 2rem;
+  margin-top: 3rem;
+  line-height: 3rem;
+  color: #000;
+}
+.about_section .about_btn{
+  width: 12rem;
+  height: 4rem;
+  background: none;
+  outline: 2px solid #7C2C0C;
+  color: #000;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+
+}
+.about_section .about_btn:hover{
+  background-color: #7C2C0C;
+  color:#fff;
+}
+
+/* about section start */
+
+
+/* work section start */
+
+.work_sec{
+  padding: 2% 7%;
+  text-align: center;
+}
+.work_sec h2{
+  font-size: 5rem;
+  color: #7C2C0C;
+  padding: 3rem;
+}
+.work_sec p{
+  font-size: 1.8rem;
+  color: #7C2C0C;
+  padding-bottom: 4rem;
+}
+.work_sec .work_row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.work_sec .work_row img{
+
+  object-fit: contain;
+}
+.work_row .work{
+  border: 1px solid #7C2C0C;
+  padding: 7rem 0;
+}
+.work_row .work h6{
+  font-size: 2rem;
+  color: #7C2C0C;
+}
+.work_row .work h5{
+  font-size: 1.8rem;
+  color: #7C2C0C;
+  padding: 2rem 0;
+}
+.work_sec .work_row .wk_btn{
+  width: 12rem;
+  height: 4rem;
+  background-color: #7C2C0C;
+  color: #fff;
+  cursor: pointer;
+}
+.work_sec .work_btn{
+  width: 12rem;
+  height: 4rem;
+  background: none;
+  outline: 1px solid #7C2C0C;
+  color: #000;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin: 4rem 0;
+}
+.work_sec .work_btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+.work_sec .work:hover{
+  background-color: orange;
+  color: #000;
+}
+/* work section end */
+
+/* subscribe section start */
+
+.subscribe_sec{
+  padding: 4% 7%;
+  background-color: bisque;
+  text-align: center;
+}
+.subscribe_row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe_image{
+  flex:1 1 45rem;
+  width: 45rem;
+}
+.subscribe_image img{
+  width: 100%;
+}
+.subscribe{
+  flex:1 1 45rem;
+  width: 45rem;
+}
+.subscribe input{
+  border-radius: .5rem;
+}
+.subscribe_sec .sbuscribe_in{
+  padding: 1.7rem 2rem;
+  background: none;
+  outline: none;
+  border: 1px solid #7C2C0C;
+  margin: 0 1rem;
+}
+.subscribe_sec .subscribe_sub{
+  padding: 1.7rem 1.1rem;
+  background-color: #7C2C0C;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+/* subscribe section end */
+
+/* footer section start */
+
+.footer_sec{
+  padding: 3rem 7rem;
+  background-color: #000;
+  color: #fff;
+}
+.footer_sec .footer_row{
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.footer_cont h2{
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
+.footer_row ul li{
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.footer_row ul li a{
+  color: #fff;
+  font-size: 1.8rem;
+}
+.footer_cont p{
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+/* footer section end */
